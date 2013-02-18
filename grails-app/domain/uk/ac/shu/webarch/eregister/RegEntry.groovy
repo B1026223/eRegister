@@ -5,7 +5,7 @@ class RegEntry {
 	Student student_name
 	RegSheet course_name
 	
-	Student Student
+	Student student
 
     static constraints = {
     }

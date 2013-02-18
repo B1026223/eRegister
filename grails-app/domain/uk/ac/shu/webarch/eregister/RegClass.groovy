@@ -4,6 +4,8 @@ class RegClass {
 
 	String name
 	Instructor class_instructor
+
+	Course courseOwner
 	
 	static hasMany = [
 	name_of_classes:RegSheet

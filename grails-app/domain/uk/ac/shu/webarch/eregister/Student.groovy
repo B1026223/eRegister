@@ -5,12 +5,16 @@ class Student {
 	String studentName
 	String studentNumber
 
+	Set students_on_this_course
+
 	static hasMany = [
-	students_on_this_course:RegSheet
+	attendance:RegSheet
+	enroll_course:Enrollment	
 	]
 	
 	static mappedBy = [
-	students_on_this_course:'class_name'
+	attendance:student
+	enroll_course:student
 	]
 	
 	
