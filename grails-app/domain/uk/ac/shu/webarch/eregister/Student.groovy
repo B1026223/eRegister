@@ -8,13 +8,13 @@ class Student {
 	Set students_on_this_course
 
 	static hasMany = [
-	attendance:RegSheet
+	attendance:RegEntry,
 	enroll_course:Enrollment	
 	]
 	
 	static mappedBy = [
-	attendance:student
-	enroll_course:student
+	attendance:'student',
+	enroll_course:'enrol_student'
 	]
 	
 	
