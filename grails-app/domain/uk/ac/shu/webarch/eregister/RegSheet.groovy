@@ -4,12 +4,15 @@ class RegSheet {
 
 	RegClass class_name
 
+	Set signatures
+
 	static hasMany = [
-	name_of_students:Student
+	signatures:RegEntry
+	
 	]
 	
 	static mappedBy = [
-	name_of_students:'studentName'
+	signatures:'sheet'
 	]
 
     static constraints = {
