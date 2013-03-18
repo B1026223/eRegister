@@ -10,8 +10,8 @@ class BootStrap {
 	if ( frankie_instructor == null ) {
 		println("Instuctor not found, create...");
 		frankie_instructor = new Instructor ()
-		frankie_instructor.StaffNumber = 0001;
-		frankie_instructor.name('Frankie Preston');
+		frankie_instructor.staffNumber = '0001';
+		frankie_instructor.name = 'Frankie Preston';
 		frankie_instructor.save();
 	}
 	else {
