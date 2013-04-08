@@ -16,7 +16,7 @@ class BootStrap {
 							         courseDescription:'A not so fun and exciting 									 module').save();
 
 	def new_class = new RegClass(name:'WebArch-Mondays', class_instructor:frankie_instructor, 
-							     courseOwner:webArch_course).save(failOnError:true);
+							     courseOwner:webArch_course).save();
 
 	def ian_student = Student.findByStudentNumber('1234') ?: new Student(studentNumber:'1234', 
 								 studentName:'Ian  Ibbotson').save();
