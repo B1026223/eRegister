@@ -20,10 +20,11 @@ class BootStrap {
 	def matthew_student = Student.findByStudentNumber('5555') ?: new Student(studentNumber:'5555', 
 								     studentName:'Mathhew Love').save();
 
-	def new_class = RegClass.findByName('WebArch-Mondays') ?: new RegClass (name:'WebArch-Mondays', 								  class_instructor:frankie_instructor, 
+	def new_webMonday = RegClass.findByName('WebArch-Mondays') ?: new RegClass (name:'WebArch-Mondays', 								  class_instructor:frankie_instructor, 
 							          courseOwner:webArch_course).save();
-	def new_class = RegClass.findByName('DatabaseSystems-Wednesday') ?: new RegClass (name:'DatabaseSystems-Wednesday', 								  	class_instructor:rob_instructor, 
-							          courseOwner:databaseSystems_course).save();
+
+	def new_databaseWed = RegClass.findByName('DatabaseSystems-Wed') ?: new RegClass (name:'DatabaseSystem-Wed', 								  		     class_instructor:rob_instructor, 
+							          	     courseOwner:databaseSystems_course).save();
 	}
     def destroy = {
     }
